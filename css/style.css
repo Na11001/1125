@@ -1,0 +1,155 @@
+/* PC、スマホ共通スタイル */
+#main-visual > img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#main-visual > h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    font-family: "セザンヌ", "Source Sans Pro", "Hiragino Kaku Gothic ProN";  
+    color: #ffffff;
+}
+#logo-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    background-color: yellow;
+}
+body {
+    margin: 0 auto;
+    color: #666961;
+    font-family: "セザンヌ", "Source Sans Pro", "Hiragino Kaku Gothic ProN";  
+    text-align: center;
+    font-size: 18px;
+}
+#nav-pc {
+    display: none;
+}
+#menu-sp {
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    z-index: 100;
+}
+#nav-sp li {
+    list-style: none;
+}
+#nav-sp {
+    background-color: #ce933e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+}
+#nav-sp > a {
+    display: block;
+}
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+}
+#nav-sp .menu {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 44px;
+    font-size: 16px;
+    text-decoration: none;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+#nav-sp a:link,
+#nav-sp a:visited,
+#nav-sp a:active {
+    color: #ffffff;
+}
+#nav-sp a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.countries-pics {
+    display: flex;
+}
+.types-cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+footer {
+    background-color: #8f7b72;
+}
+#sns-icon {
+    display: flex;
+}
+#sns-icon img {
+    max-width: 50px;
+    margin: 10px;
+}
+footer li {
+    list-style: none;
+}
+
+/*パソコン*/
+@media screen and (min-width: 768px) {
+    #nav-pc {
+        position: absolute;
+        top: 20px;
+        left: 1000px;
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+        z-index: 11;
+    }
+    #nav-pc > a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    #logo-top {
+        position: absolute;
+        top: 0;
+        z-index: 11;
+    }
+    #nav-sp,
+    #nav-sp ul,
+    #menu-sp {
+        display: none;
+    }
+    #nav-sp li {
+        list-style: none;
+    }
+    /* #nav-pc > a:active { */
+        /* color: #d0d0d0; */
+    }
+    #nav-pc > a:hover {
+        color: orange;
+        text-decoration: underline;
+    }
+    .countries-pics {
+        display: flex;
+        justify-content: center;
+    }
+    #sns-icon img {
+        max-width: 30px;
+        padding: 0 auto;
+    }
+}
+  
